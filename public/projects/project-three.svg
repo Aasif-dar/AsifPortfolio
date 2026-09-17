@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <defs>
+    <linearGradient id="g3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#191725"/>
+      <stop offset="100%" stop-color="#0a0a0d"/>
+    </linearGradient>
+    <pattern id="grid3" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity="0.04"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="800" fill="url(#g3)"/>
+  <rect width="1200" height="800" fill="url(#grid3)"/>
+  <circle cx="960" cy="620" r="220" fill="#8b7cf6" opacity="0.1"/>
+  <text x="80" y="420" font-family="ui-sans-serif, system-ui, sans-serif" font-size="56" font-weight="700" fill="#f5f5f7">Project Three</text>
+  <text x="80" y="460" font-family="ui-monospace, Menlo, monospace" font-size="20" fill="#97979f">replace with an actual project screenshot</text>
+</svg>
