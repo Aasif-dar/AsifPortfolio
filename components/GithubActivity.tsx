@@ -47,17 +47,17 @@ function ContributionGraph({ weeks }: { weeks: ContributionWeek[] }) {
 
 export default async function GithubActivity() {
   const stats = await getGithubStats();
-  const isPlaceholder = !stats;
+  const isPlaceholder = !stats || !stats.isLive;
 
   const data = stats ?? {
-    username: process.env.GITHUB_USERNAME || "yourusername",
-    totalContributions: 1240,
-    publicRepos: 32,
-    totalStars: 180,
-    followers: 90,
-    calendar: [] as ContributionWeek[],
-    isLive: false,
-  };
+  username: process.env.GITHUB_USERNAME || "Aasif-dar",
+  totalContributions: 0,
+  publicRepos: 0,
+  totalStars: 0,
+  followers: 0,
+  calendar: [] as ContributionWeek[],
+  isLive: false,
+};
 
   return (
     <section id="github" className="relative scroll-mt-16 border-t border-border/40 py-16 sm:py-24">
