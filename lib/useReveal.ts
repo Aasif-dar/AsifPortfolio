@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { useMediaQuery } from "./useMediaQuery";
 
 /**
  * Fires once an element scrolls into view. Skips straight to visible when
@@ -9,13 +10,11 @@ import { useEffect, useRef, useState } from "react";
  */
 export function useReveal<T extends HTMLElement>() {
   const ref = useRef<T>(null);
-  const [visible, setVisible] = useState(() => {
-    if (typeof window === "undefined") return false;
-    return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  });
+  const reducedMotion = useMediaQuery("(prefers-reduced-motion: reduce)");
+  const [intersected, setIntersected] = useState(false);
 
   useEffect(() => {
-    if (visible) return;
+    if (reducedMotion) return;
 
     const node = ref.current;
     if (!node) return;
@@ -23,7 +22,7 @@ export function useReveal<T extends HTMLElement>() {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setVisible(true);
+          setIntersected(true);
           observer.disconnect();
         }
       },
@@ -32,7 +31,7 @@ export function useReveal<T extends HTMLElement>() {
 
     observer.observe(node);
     return () => observer.disconnect();
-  }, [visible]);
+  }, [reducedMotion]);
 
-  return { ref, visible };
+  return { ref, visible: reducedMotion || intersected };
 }

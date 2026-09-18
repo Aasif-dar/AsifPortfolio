@@ -15,8 +15,11 @@ export interface ExperienceItem {
   technologies: string[];
 }
 
+export type SkillCategory = "Frontend" | "Backend" | "Database" | "Tools";
+
 export interface Skill {
   name: string;
+  category: SkillCategory;
 }
 
 export interface ContributionDay {

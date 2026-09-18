@@ -98,3 +98,12 @@ export function ArrowRightIcon({ className = "h-4 w-4" }: IconProps) {
     </svg>
   );
 }
+
+export function ArrowUpIcon({ className = "h-4 w-4" }: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.75} strokeLinecap="round" strokeLinejoin="round" className={className} aria-hidden="true">
+      <path d="M12 20V4" />
+      <path d="m5 11 7-7 7 7" />
+    </svg>
+  );
+}

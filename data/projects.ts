@@ -1,4 +1,7 @@
 import type { Project } from "@/types";
+import shahjee from "@/public/shahjee.png"
+import mangoReview from "@/public/mangoreview.png"
+import fetigyn from "@/public/fertigyn.png"
 
 // Add a new project by adding an object to this array — no UI changes needed.
 // Layouts alternate automatically (image-left, content-left, image-left, ...).
@@ -7,27 +10,28 @@ export const projects: Project[] = [
     title: "The Shahjee",
     description:
       "Premium e-commerce platform with a custom storefront, checkout flow, and admin dashboard for managing products and orders.",
-    image: "/projects/shahjee.svg",
+    image: shahjee.src,
     technologies: ["Next.js", "TypeScript", "Node.js", "MongoDB"],
     github: "",
     live: "https://theshahjee.com",
+    
   },
-  {
-    title: "Project Two",
+   {
+    title: "Mango Review",
     description:
-      "A short, punchy description of what this project does and the problem it solves for its users.",
-    image: "/projects/project-two.svg",
-    technologies: ["React", "Node.js", "Express", "Tailwind CSS"],
-    github: "https://github.com/yourusername/project-two",
-    live: "",
+      "AI-powered review management platform that analyzes customer feedback, delivers actionable business insights, and helps businesses respond to reviews faster.",
+    image: mangoReview.src,
+    technologies: ["Next.js", "TypeScript", "Node.js", "MongoDB", "AI"],
+    github: "",
+    live: "https://www.mangoreview.ai/",
   },
-  {
-    title: "Project Three",
-    description:
-      "A short, punchy description of what this project does and the problem it solves for its users.",
-    image: "/projects/project-three.svg",
-    technologies: ["Next.js", "MongoDB", "Tailwind CSS"],
-    github: "https://github.com/yourusername/project-three",
-    live: "",
-  },
+{
+  title: "Fertigyn Clinic",
+  description:
+    "Modern fertility care platform designed to connect patients with expert reproductive healthcare, advanced treatments, and compassionate support throughout their parenthood journey.",
+  image:fetigyn.src ,
+  technologies: ["Next.js", "TypeScript", "Node.js", "MongoDB"],
+  github: "",
+  live: "https://fertigynclinic.com/",
+},
 ];
