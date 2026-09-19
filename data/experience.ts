@@ -5,9 +5,9 @@ export const experience: ExperienceItem[] = [
   {
     company: "Oasis Ascend",
     position: "Full Stack Developer",
-    duration: "2025 — Present",
+    duration: "07/2025 — Present",
     description:
       "Building and maintaining full-stack web applications, from database design to responsive UI implementation.",
-    technologies: ["Next.js", "TypeScript", "Node.js", "MongoDB"],
+    technologies: ["Asp .Net Core","Next.js", "TypeScript", "Node.js", "MongoDB"],
   }
 ];

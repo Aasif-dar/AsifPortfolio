@@ -71,7 +71,7 @@ export default function ProjectCard({
             </p>
 
             {/* Minimal Technology Badges */}
-            <div className={`mt-3.5 flex flex-wrap gap-1.5 ${reversed ? "sm:justify-end" : ""}`}>
+            {/* <div className={`mt-3.5 flex flex-wrap gap-1.5 ${reversed ? "sm:justify-end" : ""}`}>
               {project.technologies.map((tech) => (
                 <span
                   key={tech}
@@ -80,7 +80,7 @@ export default function ProjectCard({
                   {tech}
                 </span>
               ))}
-            </div>
+            </div> */}
 
             {/* Links Bar */}
             <div className={`mt-4 flex items-center gap-4 ${reversed ? "sm:justify-end" : ""}`}>
