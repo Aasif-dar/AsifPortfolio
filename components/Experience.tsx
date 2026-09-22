@@ -47,12 +47,13 @@ export default function Experience() {
             </span>
           </div>
 
-          <h2 className="text-2xl font-medium tracking-tight text-foreground sm:text-4xl">
-            Where I&apos;ve worked &{" "}
-            <span className="bg-gradient-to-r from-indigo-400 via-sky-400 to-emerald-400 bg-clip-text text-transparent">
-              what I&apos;ve delivered.
-            </span>
-          </h2>
+         <h2 className="text-2xl font-medium leading-tight tracking-tight text-foreground sm:text-4xl">
+  Where I&apos;ve worked{" "}
+  <span className="text-muted-foreground">&amp;</span>{" "}
+  <span className="font-semibold">
+    what I&apos;ve delivered.
+  </span>
+</h2>
         </ScrollReveal>
 
         {/* Minimal Animated Timeline */}

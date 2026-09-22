@@ -30,16 +30,16 @@ export default function About() {
           <div className="flex items-center gap-2">
             <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
             <span className="font-mono text-[10px] uppercase tracking-widest text-secondary">
-              01 // About
+              About
             </span>
           </div>
 
-          <h2 className="text-2xl font-medium tracking-tight text-foreground sm:text-4xl">
-            A developer who cares about how things work — and{" "}
-            <span className="bg-gradient-to-r from-indigo-400 via-sky-400 to-emerald-400 bg-clip-text text-transparent">
-              how they feel.
-            </span>
-          </h2>
+        <h2 className="text-2xl font-medium tracking-tight text-foreground sm:text-4xl">
+  A developer who cares about{" "}
+  <span className="font-semibold">how things work</span>
+  {" and "}
+  <span className="font-semibold">how they feel.</span>
+</h2>
         </ScrollReveal>
 
         {/* Creative Asymmetrical Layout */}

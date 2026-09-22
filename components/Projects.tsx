@@ -27,16 +27,17 @@ export default function Projects() {
           <div className="flex items-center gap-2">
             <span className="h-1.5 w-1.5 rounded-full bg-sky-400" />
             <span className="font-mono text-[10px] uppercase tracking-widest text-secondary">
-              03 // Portfolio
+              Portfolio
             </span>
           </div>
 
-          <h2 className="text-2xl font-medium tracking-tight text-foreground sm:text-4xl">
-            Selected Work &{" "}
-            <span className="bg-gradient-to-r from-indigo-400 via-sky-400 to-emerald-400 bg-clip-text text-transparent">
-              featured builds.
-            </span>
-          </h2>
+          <h2 className="text-2xl font-medium leading-tight tracking-tight text-foreground sm:text-4xl">
+  Selected Work{" "}
+  <span className="text-muted-foreground">&amp;</span>{" "}
+  <span className="font-semibold">
+    featured builds.
+  </span>
+</h2>
           <p className="max-w-md text-xs text-secondary/80 sm:text-sm">
             A curated list of applications I&apos;ve designed, built, and deployed.
           </p>

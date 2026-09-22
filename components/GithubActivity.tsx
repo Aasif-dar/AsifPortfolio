@@ -73,16 +73,14 @@ export default async function GithubActivity() {
           <div className="flex items-center gap-2">
             <span className="h-1.5 w-1.5 rounded-full bg-[#39d353]" />
             <span className="font-mono text-[10px] uppercase tracking-widest text-secondary">
-              04 // GitHub
+               GitHub
             </span>
           </div>
 
-          <h2 className="text-2xl font-medium tracking-tight text-foreground sm:text-4xl">
-            I build{" "}
-            <span className="bg-gradient-to-r from-emerald-400 via-sky-400 to-indigo-400 bg-clip-text text-transparent">
-              consistently.
-            </span>
-          </h2>
+          <h2 className="text-2xl font-medium leading-tight tracking-tight text-foreground sm:text-4xl">
+  I build{" "}
+  <span className="font-semibold">consistently.</span>
+</h2>
         </ScrollReveal>
 
         {/* Activity Container */}

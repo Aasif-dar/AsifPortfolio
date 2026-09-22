@@ -63,7 +63,7 @@ export default function Contact() {
               <div className="flex items-center gap-2">
                 <span className="h-1.5 w-1.5 rounded-full bg-indigo-400" />
                 <span className="font-mono text-[10px] uppercase tracking-widest text-secondary">
-                  05 // Contact
+                   Contact
                 </span>
               </div>
 
@@ -174,14 +174,14 @@ export default function Contact() {
                   />
                 </div>
 
-                <button
-                  type="submit"
-                  disabled={status === "loading"}
-                  className="group relative inline-flex w-full items-center justify-center gap-2 rounded-xl border border-sky-400/30 bg-gradient-to-r from-indigo-500/10 via-sky-500/10 to-emerald-500/10 px-5 py-2.5 font-mono text-xs font-medium text-foreground backdrop-blur-md transition-all hover:border-sky-400/60 hover:bg-white/[0.06] disabled:opacity-60"
-                >
-                  <span>{status === "loading" ? "Sending..." : "Send Message"}</span>
-                  <ArrowRightIcon className="h-3 w-3 transition-transform group-hover:translate-x-1" />
-                </button>
+             <button
+  type="submit"
+  disabled={status === "loading"}
+  className="group relative inline-flex w-full items-center justify-center gap-2 rounded-xl border border-border bg-foreground px-5 py-2.5 font-mono text-xs font-medium text-background transition-all hover:opacity-90 disabled:opacity-60"
+>
+  <span>{status === "loading" ? "Sending..." : "Send Message"}</span>
+  <ArrowRightIcon className="h-3 w-3 transition-transform group-hover:translate-x-1" />
+</button>
 
                 {status === "success" && (
                   <p className="mt-2 font-mono text-[11px] text-emerald-400" role="status">
