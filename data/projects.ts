@@ -4,6 +4,7 @@ import mangoReview from "@/public/mangoreview.png";
 import fetigyn from "@/public/fertigyn.png";
 import gofixy from "@/public/gofixy.png";
 import addressHomes from "@/public/addreshomes.png";
+import fastpacker from "@/public/fastpacker.png"
 
 // Add a new project by adding an object to this array — no UI changes needed.
 // Layouts alternate automatically (image-left, content-left, image-left, ...).
@@ -55,4 +56,13 @@ export const projects: Project[] = [
     github: "",
     live: "https://fertigynclinic.com/",
   },
+  {
+  title: "Fastpacker",
+  description:
+    "Modern Kashmir travel and tour platform designed to showcase breathtaking destinations, curated travel experiences, and personalized trip planning, helping travelers explore the beauty of Kashmir with ease.",
+  image: fastpacker.src,
+  technologies: ["Next.js", "TypeScript", "Tailwind CSS", "MongoDB"],
+  github: "https://github.com/Aasif-dar",
+  live: "https://fastpacker.in/",
+},
 ];
